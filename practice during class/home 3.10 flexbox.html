@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The JK times</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        height: 100vh;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        color: yellow;
+        background-color: blueviolet;
+      }
+      /* inline-block sucks */
+      /* inline cannot have width or height */
+      /* flexbox : you only talk to their parents */
+      /* make a father a flex container */
+      #second {
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>

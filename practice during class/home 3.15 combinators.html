@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The JK times</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p span {
+        color: green;
+      }
+      P + span {
+        color: grey;
+      }
+      /* p ~ span is for the situation when brother is not exactly next to it */
+      input:required {
+        border: 1px solid tomato;
+      }
+      input[placeholder="username"] {
+        background-color: wheat;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+      button:active {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <button>button</button>
+      <form>
+        <input type="text " placeholder="username" />
+        <input type="text " placeholder="first name" />
+        <input type="text " placeholder="last name" />
+        <input type="password " required placeholder="password" />
+      </form>
+      <span>hello</span>
+      <p>asjkdfljasdlkfjawseiowfjksldfjkl jklji <span>inside</span></p>
+      <span>bye</span>
+    </div>
+  </body>
+</html>
